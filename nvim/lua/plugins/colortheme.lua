@@ -9,17 +9,17 @@ return {
 				-- Compiled file's destination location
 				compile_path = vim.fn.stdpath("cache") .. "/nightfox",
 				compile_file_suffix = "_compiled", -- Compiled file suffix
-				transparent = true,    -- Disable setting background
+				transparent = true, -- Disable setting background
 				terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
-				dim_inactive = false,  -- Non focused panes set to alternative background
+				dim_inactive = false, -- Non focused panes set to alternative background
 				module_default = true, -- Default enable value for modules
 				colorblind = {
-					enable = false,    -- Enable colorblind support
+					enable = false, -- Enable colorblind support
 					simulate_only = false, -- Only show simulated colorblind colors and not diff shifted
 					severity = {
-						protan = 0,    -- Severity [0,1] for protan (red)
-						deutan = 0,    -- Severity [0,1] for deutan (green)
-						tritan = 0,    -- Severity [0,1] for tritan (blue)
+						protan = 0, -- Severity [0,1] for protan (red)
+						deutan = 0, -- Severity [0,1] for deutan (green)
+						tritan = 0, -- Severity [0,1] for tritan (blue)
 					},
 				},
 				styles = { -- Style to be applied to different syntax groups
@@ -51,9 +51,9 @@ return {
 
 		-- Toggle background transparency
 		--
-		local onedark = require("nightfox")
-		onedark.setup(config)
-		onedark.load()
+		local nightfox = require("nightfox")
+		nightfox.setup(config)
+		nightfox.load()
 
 		-- Make the background of diagnostics messages transparent
 		local set_diagnostics_bg_transparency = function()
@@ -67,8 +67,8 @@ return {
 		-- Toggle background transparency
 		local toggle_transparency = function()
 			config.transparent = not config.transparent
-			onedark.setup(config)
-			onedark.load()
+			nightfox.setup(config)
+			nightfox.load()
 			set_diagnostics_bg_transparency()
 		end
 
