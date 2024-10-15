@@ -52,18 +52,18 @@ vim.keymap.set("n", "<leader>+", "<C-a>", opts) -- increment
 vim.keymap.set("n", "<leader>-", "<C-x>", opts) -- decrement
 
 -- Rest API plugin
-vim.keymap.set("n", "<leader>Ho", ":Rest open", opts)
-vim.keymap.set("n", "<leader>Hr", ":Rest run", opts)
-vim.keymap.set("n", "<leader>Hl", ":Rest last", opts)
-vim.keymap.set("n", "<leader>Hlg", ":Rest logs", opts)
-vim.keymap.set("n", "<leader>Hc", ":Rest cookies", opts)
-vim.keymap.set("n", "<leader>Hes", ":Rest env show", opts)
-vim.keymap.set("n", "<leader>Hesl", ":Rest env select", opts)
+vim.keymap.set("n", "<leader>xo", ":Rest open", opts)
+vim.keymap.set("n", "<leader>xr", ":Rest run", opts)
+vim.keymap.set("n", "<leader>xl", ":Rest last", opts)
+vim.keymap.set("n", "<leader>xlg", ":Rest logs", opts)
+vim.keymap.set("n", "<leader>xc", ":Rest cookies", opts)
+vim.keymap.set("n", "<leader>xes", ":Rest env show", opts)
+vim.keymap.set("n", "<leader>xesl", ":Rest env select", opts)
 
 -- window management
-vim.keymap.set("n", "<leader>v", "<C-w>v", opts) -- split window vertically
-vim.keymap.set("n", "<leader>h", "<C-w>s", opts) -- split window horizontally
-vim.keymap.set("n", "<leader>se", "<C-w>=", opts) -- make split windows equal width & height
+vim.keymap.set("n", "<leader>v", "<C-w>v", opts)      -- split window vertically
+vim.keymap.set("n", "<leader>h", "<C-w>s", opts)      -- split window horizontally
+vim.keymap.set("n", "<leader>se", "<C-w>=", opts)     -- make split windows equal width & height
 vim.keymap.set("n", "<leader>xs", ":close<CR>", opts) -- close current split window
 
 -- Navigate between splits
@@ -73,12 +73,12 @@ vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", opts)
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", opts)
 
 -- tabs
-vim.keymap.set("n", "<leader>to", ":tabnew<CR>", opts) -- open new tab
-vim.keymap.set("n", "<leader>tx", ":tabclose<CR>", opts) -- close current tab
-vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts) --  go to next tab
-vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts) --  go to previous tab
+vim.keymap.set("n", "<leader>to", ":tabnew<CR>", opts)    -- open new tab
+vim.keymap.set("n", "<leader>tx", ":tabclose<CR>", opts)  -- close current tab
+vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts)      --  go to next tab
+vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts)      --  go to previous tab
 
-vim.keymap.set("n", "<leader>x", ":Bdelete!<CR>", opts) -- close buffer
+vim.keymap.set("n", "<leader>x", ":Bdelete!<CR>", opts)   -- close buffer
 vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
 
 -- toggle line wrapping
