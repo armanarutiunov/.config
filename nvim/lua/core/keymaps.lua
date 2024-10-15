@@ -52,13 +52,13 @@ vim.keymap.set("n", "<leader>+", "<C-a>", opts) -- increment
 vim.keymap.set("n", "<leader>-", "<C-x>", opts) -- decrement
 
 -- Rest API plugin
-vim.keymap.set("n", "<leader>xo", ":Rest open", opts)
-vim.keymap.set("n", "<leader>xr", ":Rest run", opts)
-vim.keymap.set("n", "<leader>xl", ":Rest last", opts)
-vim.keymap.set("n", "<leader>xlg", ":Rest logs", opts)
-vim.keymap.set("n", "<leader>xc", ":Rest cookies", opts)
-vim.keymap.set("n", "<leader>xes", ":Rest env show", opts)
-vim.keymap.set("n", "<leader>xesl", ":Rest env select", opts)
+vim.keymap.set("n", "<leader>xo", ":Rest open<CR>", opts)
+vim.keymap.set("n", "<leader>xr", ":Rest run<CR>", opts)
+vim.keymap.set("n", "<leader>xl", ":Rest last<CR>", opts)
+vim.keymap.set("n", "<leader>xlg", ":Rest logs<CR>", opts)
+vim.keymap.set("n", "<leader>xc", ":Rest cookies<CR>", opts)
+vim.keymap.set("n", "<leader>xes", ":Rest env show<CR>", opts)
+vim.keymap.set("n", "<leader>xesl", ":Rest env select<CR>", opts)
 
 -- window management
 vim.keymap.set("n", "<leader>v", "<C-w>v", opts)      -- split window vertically
