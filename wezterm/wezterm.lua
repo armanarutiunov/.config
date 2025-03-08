@@ -14,7 +14,7 @@ config = {
 	background = {
 		{
 			source = {
-				File = "Users/arman.arutiunov/Pictures/bladerunner_bg.jpg",
+				File = "Users/arman/.config/wezterm/nvim_bg.jpg",
 			},
 			hsb = {
 				hue = 1.0,
