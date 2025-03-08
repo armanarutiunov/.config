@@ -20,6 +20,18 @@ config = {
 	line_height = 1.2,
 	max_fps = 120,
 	prefer_egl = true,
+	keys = {
+		{
+			key = "LeftArrow",
+			mods = "OPT",
+			action = wezterm.action.SendKey({ mods = "OPT", key = "b" }),
+		},
+		{
+			key = "RightArrow",
+			mods = "OPT",
+			action = wezterm.action.SendKey({ mods = "OPT", key = "f" }),
+		},
+	},
 	background = {
 		{
 			source = {
