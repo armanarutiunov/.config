@@ -17,6 +17,7 @@ config = {
 	color_scheme = "Nord (Gogh)",
 	font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
 	font_size = 17,
+	line_height = 1.2,
 	background = {
 		{
 			source = {
