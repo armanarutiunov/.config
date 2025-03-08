@@ -18,6 +18,8 @@ config = {
 	font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
 	font_size = 17,
 	line_height = 1.2,
+	max_fps = 120,
+	prefer_egl = true,
 	background = {
 		{
 			source = {
