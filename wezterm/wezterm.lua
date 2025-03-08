@@ -21,7 +21,7 @@ config = {
 	background = {
 		{
 			source = {
-				File = "Users/arman/.config/wezterm/nvim_bg.jpg",
+				File = os.getenv("HOME") .. "/.config/wezterm/nvim_bg.jpg",
 			},
 			hsb = {
 				hue = 1.0,
