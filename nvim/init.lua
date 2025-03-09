@@ -27,4 +27,7 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.xcodebuild"),
 	require("plugins.rest"),
+	require("plugins.cmp"),
+	--	require("plugins.swiftlint"),
+	require("plugins.swiftformat"),
 })
