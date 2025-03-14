@@ -176,8 +176,8 @@ format = '[ $symbol ($version) ]($style)'
 [status]
 format = '[ $symbol ]($style)'
 style = "bold"
-symbol = '[](fg:nord11)'
-success_symbol = '[](fg:nord14)'
+symbol = '[❯](bold red)'
+success_symbol = '[❯](bold green)'
 not_executable_symbol = '[🛇](fg:nord11)'
 not_found_symbol = '[󰍉](fg:nord11)'
 sigint_symbol = '[](fg:nord13)'
