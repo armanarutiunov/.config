@@ -1,7 +1,7 @@
 # Powerline style with Nord color palette
 
 format = """
-[░▒▓](nord0)\
+\n[░▒▓](nord0)\
 $os\
 [](bg:nord1 fg:nord0)\
 $directory\
