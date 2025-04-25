@@ -1,0 +1,5 @@
+font-size = 19
+adjust-cell-height = 20%
+mouse-hide-while-typing = true
+theme = xcodedark
+macos-non-native-fullscreen = true
