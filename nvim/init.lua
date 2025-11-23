@@ -30,4 +30,5 @@ require("lazy").setup({
 	require("plugins.cmp"),
 	--	require("plugins.swiftlint"),
 	require("plugins.swiftformat"),
+	require("plugins.elixir"),
 })
