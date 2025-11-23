@@ -1,3 +1,9 @@
+tags
+test.sh
+.luarc.json
+
+spell/
+
 tmux/plugins
 .DS_Store
-nvim/lazy-lock.json
+# nvim/lazy-lock.json
