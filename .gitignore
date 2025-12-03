@@ -7,3 +7,4 @@ spell/
 tmux/plugins
 .DS_Store
 # nvim/lazy-lock.json
+lazygit/state.yml
