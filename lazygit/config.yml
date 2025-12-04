@@ -136,7 +136,7 @@ gui:
     # Background color of selected line.
     # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#highlighting-the-selected-line
     selectedLineBgColor:
-      - blue
+      - '#373354'
 
     # Background color of selected line when view doesn't have focus.
     inactiveViewSelectedLineBgColor:
@@ -320,7 +320,7 @@ git:
     autoWrapCommitMessage: true
 
     # If autoWrapCommitMessage is true, the width to wrap to
-    autoWrapWidth: 72
+    autoWrapWidth: 60
 
   # Config relating to merging
   merging:
@@ -405,7 +405,7 @@ git:
 
   # If true, parse emoji strings in commit messages e.g. render :rocket: as 🚀
   # (This should really be under 'gui', not 'git')
-  parseEmoji: false
+  parseEmoji: true
 
   # Config for showing the log in the commits view
   log:
@@ -463,7 +463,7 @@ refresher:
   fetchInterval: 60
 
 # If true, show a confirmation popup before quitting Lazygit
-confirmOnQuit: false
+confirmOnQuit: true
 
 # If true, exit Lazygit when the user presses escape in a context where there is
 # nothing to cancel/close
