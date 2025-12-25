@@ -1,6 +1,8 @@
+macos-option-as-alt = left
 font-size = 19
 adjust-cell-height = 20%
 mouse-hide-while-typing = true
 theme = Xcode Dark
 macos-non-native-fullscreen = true
 keybind = shift+enter=text:\x1b\r
+keybind = shift+three=text:#
