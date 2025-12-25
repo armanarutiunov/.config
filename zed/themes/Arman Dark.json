@@ -1,0 +1,77 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Arman Dark",
+  "author": "Converted from Xcode",
+  "themes": [
+    {
+      "name": "Arman Dark",
+      "appearance": "dark",
+      "style": {
+        "background": "#23272B",
+        "foreground": "#BCB6A4",
+        "editor.background": "#23272B",
+        "editor.foreground": "#BCB6A4",
+        "editor.cursor": "#BCB6A4",
+        "editor.active_line.background": "#2E3336",
+        "editor.selection.background": "#52687073",
+        "editor.line_number": "#526870",
+        "editor.active_line_number": "#BCB6A4",
+        "terminal.background": "#222427",
+        "terminal.foreground": "#BCB6A4",
+        "syntax": {
+          "comment": {
+            "color": "#6C7986",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "#6C7986"
+          },
+          "string": {
+            "color": "#DB2C38"
+          },
+          "string.regex": {
+            "color": "#DB2C38"
+          },
+          "constant": {
+            "color": "#6B66B2"
+          },
+          "constant.numeric": {
+            "color": "#786DC4"
+          },
+          "keyword": {
+            "color": "#FC5FA3",
+            "font_weight": 700
+          },
+          "keyword.directive": {
+            "color": "#C67C48"
+          },
+          "function": {
+            "color": "#9EC057"
+          },
+          "type": {
+            "color": "#6361C3"
+          },
+          "variable": {
+            "color": "#63BE65"
+          },
+          "property": {
+            "color": "#63BE65"
+          },
+          "constructor": {
+            "color": "#DBA62E"
+          },
+          "link_uri": {
+            "color": "#4155D1",
+            "underline": true
+          },
+          "tag": {
+            "color": "#FC5FA3"
+          },
+          "attribute": {
+            "color": "#BEBE12"
+          }
+        }
+      }
+    }
+  ]
+}

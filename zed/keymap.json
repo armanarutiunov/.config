@@ -1,0 +1,51 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
+    "bindings": {
+      "space l g": ["task::Spawn", { "task_name": "Lazygit" }],
+      "cmd-b": [
+        "task::Spawn",
+        {
+          "task_name": "Swift Build"
+        }
+      ],
+      "cmd-u": [
+        "task::Spawn",
+        {
+          "task_name": "Swift Test"
+        }
+      ],
+      "cmd-r": [
+        "task::Spawn",
+        {
+          "task_name": "Swift Run"
+        }
+      ],
+      "space e": "workspace::ToggleLeftDock",
+      "space o r": "projects::OpenRecent",
+      "cmd-shift-o": ["workspace::SendKeystrokes", "cmd-p"], /// Remapping cmd-p to more xcode like search withing project files
+      "space p t": "project_panel::ToggleFocus",
+      "space f e d": "zed::OpenSettings",
+      "space o t": "workspace::OpenInTerminal"
+    }
+  }
+]
