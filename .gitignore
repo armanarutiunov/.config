@@ -8,3 +8,8 @@ tmux/plugins
 .DS_Store
 # nvim/lazy-lock.json
 lazygit/state.yml
+raycast/extensions/
+swiftpm/cache
+swiftpm/security
+zed/conversations/
+zed/prompts/
