@@ -29,6 +29,8 @@ require('lazy').setup({
 
   require 'plugins.telescope',
 
+  require 'plugins.bufferline',
+
   require 'plugins.lspconfig',
 
   require 'plugins.conform',
