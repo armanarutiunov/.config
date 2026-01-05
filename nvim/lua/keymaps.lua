@@ -43,6 +43,10 @@ vim.keymap.set('n', '<Right>', ':vertical resize +2<CR>', opts)
 vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts)
 vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts)
 
+-- Jump to alternate buffer (previous file)
+-- If your terminal can send <A-Tab>, this will work. Otherwise, see approach (2).
+vim.keymap.set('n', '<A-Tab>', '<cmd>e #<CR>', { desc = 'Jump to previous file (alternate buffer)' })
+
 -- increment/decrement numbers
 vim.keymap.set('n', '<leader>+', '<C-a>', opts) -- increment
 vim.keymap.set('n', '<leader>-', '<C-x>', opts) -- decrement
