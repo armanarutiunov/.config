@@ -88,6 +88,10 @@ vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts)
 -- vim.keymap.set('i', 'jk', '<ESC>', opts)
 -- vim.keymap.set('i', 'kj', '<ESC>', opts)
 
+-- Insert mode edits
+vim.keymap.set('i', '<D-BS>', '<C-o><C-u>', { desc = 'Delete to start of line (insert mode)' })
+vim.keymap.set('i', '<A-BS>', '<C-o>db', { desc = 'Alt+Backspace: delete word backward' })
+
 -- Stay in indent mode
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
