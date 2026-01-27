@@ -406,11 +406,20 @@ disableStartupPopups: false
 customCommands:
   - key: 'v'
     context: 'files'
-    description: 'Preview image diff'
+    description: 'Preview image diff (OLD | DIFF | NEW)'
     command: |
-      f=/tmp/old_$(basename '{{.SelectedFile.Name}}')
-      git show HEAD:'{{.SelectedFile.Name}}' | git lfs smudge > $f 2>/dev/null
-      [ -s $f ] && magick $f '{{.SelectedFile.Name}}' +smush 20 /tmp/diff.png && open /tmp/diff.png || open '{{.SelectedFile.Name}}'
+      old=/tmp/old_$(basename '{{.SelectedFile.Name}}')
+      new='{{.SelectedFile.Name}}'
+      diff=/tmp/diff_$(basename '{{.SelectedFile.Name}}')
+      out=/tmp/comparison.png
+      git show HEAD:'{{.SelectedFile.Name}}' | git lfs smudge > $old 2>/dev/null
+      if [ -s $old ]; then
+        magick "$old" -background white -alpha remove "$new" -background white -alpha remove -compose difference -composite "$diff"
+        magick "$old" "$diff" "$new" +append -bordercolor white -border 10 "$out"
+        open "$out"
+      else
+        open "$new"
+      fi
 # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-pull-request-urls
 services: {}
 # What to do when opening Lazygit outside of a git repo.
