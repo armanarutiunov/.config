@@ -219,6 +219,9 @@ gui:
   switchTabsWithPanelJumpKeys: false
 # Config relating to git
 git:
+  paging:
+    colorArg: always
+    pager: delta --paging=never
   # Array of pagers. Each entry has the following format:
   #
   #   # Value of the --color arg in the git diff command. Some pagers want
