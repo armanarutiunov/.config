@@ -22,6 +22,9 @@ vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', opts)
 -- quit file
 vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
 
+-- rename symbol
+vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, { desc = 'LSP rename symbol' })
+
 -- delete single character without copying into register
 vim.keymap.set('n', 'x', '"_x', opts)
 
