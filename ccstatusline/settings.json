@@ -77,6 +77,18 @@
     ],
     [
       {
+        "id": "af5624cb-141b-47d9-9bc9-2ccd442c2da3",
+        "type": "current-working-dir",
+        "metadata": {
+          "fishStyle": "true"
+        },
+        "color": "brightRed"
+      },
+      {
+        "id": "66fac7e8-9326-4f52-b697-b604659f488e",
+        "type": "separator"
+      },
+      {
         "id": "64b88059-c7d0-497b-9acf-176362e76dfa",
         "type": "git-worktree",
         "color": "brightRed",
