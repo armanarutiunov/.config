@@ -1,0 +1,89 @@
+# Staff Engineer → Teams/Streams mapping
+# This file maps staff engineers to the teams and streams they support.
+#
+# Format:
+#   - email: staff engineer's email
+#     name: display name
+#     stream: the stream they support (optional)
+#     teams: list of teams they're responsible for
+#     specialization: technology/area focus (optional, e.g., iOS, Android, B2B, Gateway)
+
+# Team-focused staff engineers
+- email: edon.gashi@fresha.com
+  name: Edon Gashi
+  stream: Data & Finance
+  teams:
+    - Orion
+    - Dardania
+
+- email: maciej@fresha.com
+  name: Maciej Łopatka
+  stream: Payments
+  teams:
+    - Pierogi
+    - XD
+
+- email: kamil@fresha.com
+  name: Kamil Kowalski
+  stream: POS
+  teams:
+    - Apollo
+    - Spirit
+
+- email: tomasz.k@fresha.com
+  name: Tomasz Koszykowski
+  stream: POS
+  teams:
+    - Apollo
+    - Spirit
+
+- email: vladimir.bokov@fresha.com
+  name: Vladimir Bokov
+  stream: Marketing and Communication
+  teams:
+    - Dealers
+    - Janusze
+
+- email: piotr.r@fresha.com
+  name: Piotr Rybarczyk
+  stream: Scheduling
+  teams:
+    - Mind The Gap
+    - Raptors
+    - Pirates
+    - Kraken
+
+- email: piotr.borowiec@fresha.com
+  name: Piotr Borowiec
+  teams:
+    - Commando
+    - Blaze
+    - Worms
+
+- email: emil@fresha.com
+  name: Emil Smoleński
+  stream: Platform
+  teams:
+    - Devex
+    - Undefined
+
+# Technology-focused staff engineers (no specific teams)
+- email: kondrat.kielar@fresha.com
+  name: Kondrat Kielar
+  specialization: iOS
+  teams: []
+
+- email: michal.moczulski@fresha.com
+  name: Michal Moczulski
+  specialization: Android
+  teams: []
+
+- email: piotr.k@fresha.com
+  name: Piotr Kowalczyk
+  specialization: B2B, Gateway
+  teams: []
+
+- email: martin.sanders@fresha.com
+  name: Martin Sanders
+  specialization: B2C, Gateway
+  teams: []
