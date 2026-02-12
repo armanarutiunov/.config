@@ -1,0 +1,9 @@
+version: 1
+current_profile: 1c90d518-ba7e-4cf9-9cf1-f88bf7c489df:712020:1ac75ff6-82f1-4af5-97b4-c9a1caaa3da1
+profiles:
+    - site: shedul.atlassian.net
+      cloud_id: 1c90d518-ba7e-4cf9-9cf1-f88bf7c489df
+      account_id: 712020:1ac75ff6-82f1-4af5-97b4-c9a1caaa3da1
+      display_name: Arman Arutiunov
+      email: arman.arutiunov@fresha.com
+      auth_type: oauth
