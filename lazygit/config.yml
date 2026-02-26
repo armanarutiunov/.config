@@ -1,5 +1,7 @@
 # Config relating to the Lazygit UI
 gui:
+  worktreesInSeparateGroup: true
+  hideStatusPanel: false
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-author-color
   authorColors: {}
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-branch-color
@@ -219,9 +221,12 @@ gui:
   switchTabsWithPanelJumpKeys: false
 # Config relating to git
 git:
-  paging:
-    colorArg: always
-    pager: delta --paging=never
+#  paging:
+#    colorArg: always
+#    pager: delta --paging=never
+  pagers:
+    - pager: delta --paging=never
+  #   
   # Array of pagers. Each entry has the following format:
   #
   #   # Value of the --color arg in the git diff command. Some pagers want
@@ -245,7 +250,9 @@ git:
   #
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
   # for more information.
-  pagers: []
+      #
+  #pagers: []
+      #
   # Config relating to committing
   commit:
     # If true, pass '--signoff' flag when committing
