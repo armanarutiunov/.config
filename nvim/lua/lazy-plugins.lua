@@ -35,6 +35,8 @@ require('lazy').setup({
 
   require 'plugins.conform',
 
+  require 'plugins.comment',
+
   require 'plugins.blink-cmp',
 
   require 'plugins.colortheme',
