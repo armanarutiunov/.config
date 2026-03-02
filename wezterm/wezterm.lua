@@ -10,15 +10,15 @@ config = {
 	window_padding = {
 		left = 0,
 		right = 0,
-		top = 30,
+		top = 0,
 		bottom = 0,
 	},
-	default_cursor_style = "BlinkingBar",
-	color_scheme = "Nord (Gogh)",
+	color_scheme = "kanagawa-paper-ink",
+	color_scheme_dirs = { "colors" },
 	font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
-	font_size = 17,
+	font_size = 18,
 	line_height = 1.2,
-	max_fps = 120,
+	max_fps = 60,
 	prefer_egl = true,
 	keys = {
 		{
@@ -30,6 +30,20 @@ config = {
 			key = "RightArrow",
 			mods = "OPT",
 			action = wezterm.action.SendKey({ mods = "OPT", key = "f" }),
+		},
+		{
+			key = "Enter",
+			mods = "SHIFT",
+			action = wezterm.action.SendString("\x1b\r"),
+		},
+		{
+			key = "£",
+			action = wezterm.action.SendString("#"),
+		},
+		{
+			key = "Backspace",
+			mods = "CMD",
+			action = wezterm.action.SendString("\x15"),
 		},
 	},
 	background = {
