@@ -6,7 +6,15 @@ return {
     init = function()
       vim.cmd.colorscheme 'kanagawa-paper-ink'
     end,
-    opts = { ... },
+    opts = {
+      transparent = true,
+      overrides = function()
+        return {
+          NeoTreeNormal = { bg = 'NONE' },
+          NeoTreeNormalNC = { bg = 'NONE' },
+        }
+      end,
+    },
   },
   -- {
   --   'rebelot/kanagawa.nvim',
