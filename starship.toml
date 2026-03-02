@@ -1,15 +1,15 @@
-# Powerline style with Nord color palette
+# Powerline style with Kanagawa Paper Ink color palette
 
 format = """
-\n[░▒▓](nord0)\
+\n[░▒▓](sumi_ink)\
 $os\
-[](bg:nord1 fg:nord0)\
+[](bg:sumi_ink_light fg:sumi_ink)\
 $directory\
-[](bg:nord2 fg:nord1)\
+[](bg:wave_blue fg:sumi_ink_light)\
 $git_branch\
 $git_status\
 $git_metrics\
-[](bg:nord3 fg:nord2)\
+[](bg:wave_blue_light fg:wave_blue)\
 $c\
 $elixir\
 $elm\
@@ -24,29 +24,31 @@ $nim\
 $rust\
 $scala\
 $swift\
-[](fg:nord3)
+[](fg:wave_blue_light)
 $status
 """
 
 scan_timeout = 50
 command_timeout = 1000
 add_newline = false
-palette = 'nord'
+palette = 'kanagawa'
 
-[palettes.nord]
-nord0 = '#2E3440'
-nord1 = '#3B4252'
-nord2 = '#434C5E'
-nord3 = '#4C566A'
-nord4 = '#D8DEE9'
-nord11 = '#BF616A'
-nord13 = '#EBCB8B'
-nord14 = '#A2BE8A'
+[palettes.kanagawa]
+sumi_ink = '#1F1F28'
+sumi_ink_light = '#2A2A37'
+wave_blue = '#363646'
+wave_blue_light = '#435965'
+fuji_white = '#DCD7BA'
+autumn_red = '#c4746e'
+carp_yellow = '#c4b28a'
+autumn_green = '#699469'
+spring_violet = '#a292a3'
+wave_aqua = '#8ea49e'
 
 # username, host and OS
 [username]
-style_root = 'bg:nord0 fg:nord11'
-style_user = 'bg:nord0 fg:nord4'
+style_root = 'bg:sumi_ink fg:autumn_red'
+style_user = 'bg:sumi_ink fg:fuji_white'
 format = '[$user]($style)'
 show_always = true
 disabled = false
@@ -56,12 +58,12 @@ ssh_only = false
 ssh_symbol = ' '
 trim_at = '.'
 format = '[$hostname$ssh_symbol]($style)'
-style = 'bg:nord0 fg:nord4'
+style = 'bg:sumi_ink fg:fuji_white'
 disabled = false
 
 [os]
 format = '[ $symbol ]($style)'
-style = 'bg:nord0 fg:nord4'
+style = 'bg:sumi_ink fg:carp_yellow'
 disabled = false
 # for symbols look at the end of the file
 
@@ -70,10 +72,10 @@ disabled = false
 truncation_length = 1
 truncate_to_repo = true
 format = '[ $path ]($style)[$read_only]($read_only_style)'
-style = 'bg:nord1 fg:nord4'
+style = 'bg:sumi_ink_light fg:fuji_white'
 disabled = false
 read_only = ' 󰌾 '
-read_only_style = 'bg:nord1 fg:nord11'
+read_only_style = 'bg:sumi_ink_light fg:autumn_red'
 truncation_symbol = ''
 
 [directory.substitutions]
@@ -89,87 +91,87 @@ truncation_symbol = ''
 # git
 [git_branch]
 symbol = ''
-style = 'bg:nord2 fg:nord4'
+style = 'bg:wave_blue fg:wave_aqua'
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = 'bg:nord2 fg:nord4'
+style = 'bg:wave_blue fg:wave_aqua'
 format = '[$all_status$ahead_behind ]($style)'
 
 [git_metrics]
-added_style = 'bg:nord2 fg:nord14'
-deleted_style = 'bg:nord2 fg:nord11'
+added_style = 'bg:wave_blue fg:autumn_green'
+deleted_style = 'bg:wave_blue fg:autumn_red'
 format = '[+$added ]($added_style)[-$deleted ]($deleted_style)'
 disabled = false
 
 # programming
 [c]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [elixir]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [elm]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [golang]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [python]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) (\($virtualenv\)) ]($style)'
 
 [gradle]
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [haskell]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ''
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
 symbol = '󰆥 '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = ''
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [scala]
 symbol = ' '
-style = 'bg:nord3 fg:nord4'
+style = 'bg:wave_blue_light fg:spring_violet'
 format = '[ $symbol ($version) ]($style)'
 
 [swift]
 symbol = ' '
-style = 'bg:nord3 fg:#F05239'
+style = 'bg:wave_blue_light fg:#F05239'
 format = '[ $symbol ($version) ]($style)'
 
 # status
@@ -178,10 +180,10 @@ format = '[ $symbol ]($style)'
 style = "bold"
 symbol = '[❯](bold red)'
 success_symbol = '[❯](bold green)'
-not_executable_symbol = '[🛇](fg:nord11)'
-not_found_symbol = '[󰍉](fg:nord11)'
-sigint_symbol = '[](fg:nord13)'
-signal_symbol = '[](fg:nord11)'
+not_executable_symbol = '[🛇](fg:autumn_red)'
+not_found_symbol = '[󰍉](fg:autumn_red)'
+sigint_symbol = '[](fg:carp_yellow)'
+signal_symbol = '[](fg:autumn_red)'
 disabled = false
 
 # OS symbols
