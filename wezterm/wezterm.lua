@@ -45,6 +45,16 @@ config = {
 			mods = "CMD",
 			action = wezterm.action.SendString("\x15"),
 		},
+		{
+			key = "LeftArrow",
+			mods = "CMD",
+			action = wezterm.action.SendKey({ key = "Home" }),
+		},
+		{
+			key = "RightArrow",
+			mods = "CMD",
+			action = wezterm.action.SendKey({ key = "End" }),
+		},
 	},
 	background = {
 		{
