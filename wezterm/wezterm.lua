@@ -18,8 +18,10 @@ config = {
 	font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
 	font_size = 18,
 	line_height = 1.2,
-	max_fps = 60,
+	animation_fps = 120,
+	max_fps = 120,
 	prefer_egl = true,
+	front_end = "WebGpu",
 	keys = {
 		{
 			key = "LeftArrow",
