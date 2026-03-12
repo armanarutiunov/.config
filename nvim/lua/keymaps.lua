@@ -163,3 +163,36 @@ vim.keymap.set('n', '<leader>xq', '<cmd>Telescope quickfix<cr>', { desc = 'Show 
 
 vim.keymap.set('n', '<leader>xx', '<cmd>XcodebuildQuickfixLine<cr>', { desc = 'Quickfix Line' })
 vim.keymap.set('n', '<leader>xa', '<cmd>XcodebuildCodeActions<cr>', { desc = 'Show Code Actions' })
+
+-- Preview current markdown file rendered with glow in a floating window
+vim.keymap.set('n', '<leader>mp', function()
+  local file = vim.api.nvim_buf_get_name(0)
+  if file == '' then
+    return
+  end
+
+  local buf = vim.api.nvim_create_buf(false, true)
+  local width = math.floor(vim.o.columns * 0.8)
+  local height = math.floor(vim.o.lines * 0.8)
+
+  local win = vim.api.nvim_open_win(buf, true, {
+    relative = 'editor',
+    width = width,
+    height = height,
+    col = math.floor((vim.o.columns - width) / 2),
+    row = math.floor((vim.o.lines - height) / 2),
+    style = 'minimal',
+    border = 'rounded',
+  })
+
+  vim.fn.termopen('glow -p ' .. vim.fn.shellescape(file))
+  vim.cmd 'startinsert'
+
+  -- Close the float with q or Esc
+  vim.keymap.set('t', 'q', function()
+    vim.api.nvim_win_close(win, true)
+  end, { buffer = buf })
+  vim.keymap.set('t', '<Esc>', function()
+    vim.api.nvim_win_close(win, true)
+  end, { buffer = buf })
+end, { desc = 'Preview markdown with glow' })
