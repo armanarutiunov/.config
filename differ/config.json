@@ -1,0 +1,8 @@
+{
+  "theme": "dark",
+  "tab_width": 4,
+  "commit_msg_cmd": "",
+  "commit_msg_prompt": "",
+  "split_diff": false,
+  "editor_cmd": ""
+}
