@@ -7,3 +7,61 @@ macos-non-native-fullscreen = true
 keybind = shift+enter=text:\x1b\r
 keybind = shift+three=text:#
 macos-titlebar-style = hidden
+
+# Free Cmd+1..9 from Ghostty's default tab shortcuts so they can be
+# used as the second half of the opensessions leader sequence.
+keybind = cmd+1=unbind
+keybind = cmd+2=unbind
+keybind = cmd+3=unbind
+keybind = cmd+4=unbind
+keybind = cmd+5=unbind
+keybind = cmd+6=unbind
+keybind = cmd+7=unbind
+keybind = cmd+8=unbind
+keybind = cmd+9=unbind
+
+# opensessions leader sequences: Cmd+O, then s/t/1..9
+# These send prefix + direct bindings (C-s, C-t, M-1..9) to avoid
+# timing issues with tmux command tables receiving all bytes at once.
+keybind = cmd+o>s=text:\x01\x13
+keybind = cmd+o>t=text:\x01\x14
+keybind = cmd+o>1=text:\x01\x1b1
+keybind = cmd+o>digit_1=text:\x01\x1b1
+keybind = cmd+o>cmd+1=text:\x01\x1b1
+keybind = cmd+o>cmd+digit_1=text:\x01\x1b1
+keybind = cmd+o>2=text:\x01\x1b2
+keybind = cmd+o>digit_2=text:\x01\x1b2
+keybind = cmd+o>cmd+2=text:\x01\x1b2
+keybind = cmd+o>cmd+digit_2=text:\x01\x1b2
+keybind = cmd+o>3=text:\x01\x1b3
+keybind = cmd+o>digit_3=text:\x01\x1b3
+keybind = cmd+o>cmd+3=text:\x01\x1b3
+keybind = cmd+o>cmd+digit_3=text:\x01\x1b3
+keybind = cmd+o>4=text:\x01\x1b4
+keybind = cmd+o>digit_4=text:\x01\x1b4
+keybind = cmd+o>cmd+4=text:\x01\x1b4
+keybind = cmd+o>cmd+digit_4=text:\x01\x1b4
+keybind = cmd+o>5=text:\x01\x1b5
+keybind = cmd+o>digit_5=text:\x01\x1b5
+keybind = cmd+o>cmd+5=text:\x01\x1b5
+keybind = cmd+o>cmd+digit_5=text:\x01\x1b5
+keybind = cmd+o>6=text:\x01\x1b6
+keybind = cmd+o>digit_6=text:\x01\x1b6
+keybind = cmd+o>cmd+6=text:\x01\x1b6
+keybind = cmd+o>cmd+digit_6=text:\x01\x1b6
+keybind = cmd+o>7=text:\x01\x1b7
+keybind = cmd+o>digit_7=text:\x01\x1b7
+keybind = cmd+o>cmd+7=text:\x01\x1b7
+keybind = cmd+o>cmd+digit_7=text:\x01\x1b7
+keybind = cmd+o>8=text:\x01\x1b8
+keybind = cmd+o>digit_8=text:\x01\x1b8
+keybind = cmd+o>cmd+8=text:\x01\x1b8
+keybind = cmd+o>cmd+digit_8=text:\x01\x1b8
+keybind = cmd+o>9=text:\x01\x1b9
+keybind = cmd+o>digit_9=text:\x01\x1b9
+keybind = cmd+o>cmd+9=text:\x01\x1b9
+keybind = cmd+o>cmd+digit_9=text:\x01\x1b9
+
+# Direct shortcuts (skip the Cmd+O leader)
+keybind = cmd+shift+o=text:\x01\x13
+keybind = cmd+e=text:\x01\x14
