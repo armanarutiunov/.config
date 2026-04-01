@@ -73,16 +73,25 @@
         "id": "a7937538-616c-4ce0-8052-015b9eea0271",
         "type": "output-style",
         "color": "brightMagenta"
+      },
+      {
+        "id": "d5e34449-9be5-4479-be66-6e3a8ac75b71",
+        "type": "separator"
+      },
+      {
+        "id": "1dcd170d-8646-4973-be32-32d038191a2c",
+        "type": "claude-session-id",
+        "color": "brightBlack"
       }
     ],
     [
       {
         "id": "af5624cb-141b-47d9-9bc9-2ccd442c2da3",
         "type": "current-working-dir",
+        "color": "brightRed",
         "metadata": {
           "fishStyle": "true"
-        },
-        "color": "brightRed"
+        }
       },
       {
         "id": "66fac7e8-9326-4f52-b697-b604659f488e",
