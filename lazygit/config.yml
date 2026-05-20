@@ -1,7 +1,7 @@
 # Config relating to the Lazygit UI
 gui:
   worktreesInSeparateGroup: true
-  hideStatusPanel: false
+  hideStatusPanel: true
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-author-color
   authorColors: {}
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-branch-color
@@ -592,7 +592,7 @@ keybinding:
     markCommitAsBaseForRebase: B
     tagCommit: T
     checkoutCommit: <space>
-    resetCherryPick: <c-R>
+    resetCherryPick: <c-s-r>
     copyCommitAttributeToClipboard: "y"
     openLogMenu: <c-l>
     openInBrowser: o
